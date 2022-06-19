@@ -9,6 +9,11 @@ terraform {
     }
   }
 
+  backend "s3" {
+    bucket = "marlon-remote-state"
+    key    = "aws-vm/terraform.tfstate"
+    region = "us-east-1"
+  }
 }
 
 provider "aws" {
