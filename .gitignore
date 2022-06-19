@@ -5,5 +5,4 @@
 *.tfstate
 *.out
 *.info
-azure-key*
 aws-key*
